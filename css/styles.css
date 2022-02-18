@@ -34,6 +34,10 @@ img{
     max-width: 100%; /*nunca se escapa del elemento que lo contiene*/
 }
 
+p{
+    margin-bottom: 0.8rem;
+}
+
 .hero{
     width: 100%;
     height: 100vh;
@@ -369,6 +373,38 @@ background-color: white;
     align-items:center;
 }
 
+/* espaciado y margenes */
+
+.m-t{
+    margin-top: 1rem;
+}
+.m-b{
+    margin-bottom: 1rem;
+}
+.m-l{
+    margin-left: 1rem;
+}
+.m-r{
+    margin-right: 1rem;
+}
+
+.m-t-small{
+    margin-top: 0.5rem;
+}
+
+.m-b-small{
+    margin-bottom: 0.5rem;
+}
+
+.m-l-small{
+    margin-left: 0.5rem;
+}
+
+.m-r-small{
+    margin-right: 0.5rem;
+}
+
+
 /*parallax*/
 
 .fila.parallax{
@@ -414,6 +450,25 @@ background-color: white;
 }
 
 /* formulario de contacto */
+form.contacto{
+    width: 50%;
+}
+
+@media (max-width: 720px){
+    form.contacto{
+        width: 75%;
+    }
+}
+
+@media (max-width: 440px){
+    form.contacto{
+        width: 100%;
+    }
+}
+
+form.contacto .fila{
+    padding: 0.8rem;
+}
 
 input{
     border: none;
@@ -473,3 +528,96 @@ input[type="checkbox"]+label::before{
 input[type="checkbox"]:checked + label::before{
     content: url(../img/check-square.svg);
 }
+
+
+/*footer¨*/
+
+footer{
+    background-color: #424242;
+}
+
+footer p{
+    color: rgba(255, 255, 255, 0.80);
+}
+
+footer p:first-child{
+    color: #a97c50;
+    font-weight: bold;
+}
+
+footer img.rrss{
+    height: 48px;
+}
+
+footer a{
+    font-size: 0.8rem;
+    color: #a97c50;
+    transition: 400ms ease-in-out;
+}
+
+footer a:hover{
+    color: #88521b;
+}
+
+footer .copyright{
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* card */
+
+.fila.grid{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
+    grid-gap: 4rem;
+    justify-content:center; 
+}
+
+.card{
+    width: 360px;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 4px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card img{
+    height: 320px;
+}
+
+.card .footer-card {
+    padding: 0.8rem;
+    width: 100%;
+    height: 174px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card .footer-card p{
+    margin-bottom: 0.5rem;
+}
+
+.card .footer-card p:first-child{
+font-weight: bold;
+}
+
+.card .footer-card a{
+    background-color: #a97c50;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+    align-self: center;
+    transition: 400ms ease ease-in-out all ;
+}
+
+.card .footer-card a:hover{
+    background-color: #815529;
+}
+

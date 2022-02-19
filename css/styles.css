@@ -275,7 +275,9 @@ background-color: white;
     margin-top: 100vh;
 }
 
-#pr{
+#pr,
+#legal,
+#cookies{
     display: block;
     margin-top:-90px;
     padding-bottom: 90px;
@@ -284,6 +286,10 @@ background-color: white;
 .fila{
     display: flex;
     padding: 2rem 1rem;
+}
+
+.fila.contacto{
+    margin-top: 80px;
 }
 
 .col-100{
@@ -621,3 +627,25 @@ font-weight: bold;
     background-color: #815529;
 }
 
+/* Ficha propiedad */
+
+.propiedad{
+    background-image: url('../img/property5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 80px;
+}
+
+.propiedad div:first-child{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.propiedad div:first-child h1{
+    font-size: 1.4rem;
+    color: #a97c50;
+}
+.propiedad div:first-child p img{
+    width: 28px;
+    height: 28px;
+    }
